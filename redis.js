@@ -2,7 +2,7 @@ let redis = require("redis");
 const redis_client = redis.createClient({host:'47.99.173.26',port:'11002',ttl:5*60*1000});
 
 redis_client.auth('**^^*(*%$jdfh~#%&',function(){
-    console.log('auth succress');
+    console.log('redis succress');
 });
 redis_client.on("error",function(err){
     console.log(err);
